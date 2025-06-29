@@ -53,12 +53,12 @@ def fetch_candles_by_date(start_date, end_date, symbol="BTCUSDT", product_type="
 
 if __name__ == "__main__":
     
-    start_date = datetime(2025, 5, 11)
-    end_date = datetime(2025, 6, 10)  
+    start_date = datetime(2025, 6, 11)
+    end_date = datetime(2025, 6, 29)  
     
     
     df = fetch_candles_by_date(start_date, end_date)
-    df.to_csv('bit_candles_20250511_to_20250610.csv', index=False)
+    df.to_csv('./data/bit_candles_20250611_to_20250629.csv', index=False)
     # df = fetch_candles_by_date(start_date, end_date ,symbol="ETCUSDT")
     # df.to_csv('eth_candles_20250511_to_20250610.csv', index=False)
     

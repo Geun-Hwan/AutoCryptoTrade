@@ -271,7 +271,7 @@ class TradingBacktest:
 # 사용 예시
 if __name__ == "__main__":
     # 백테스트 실행
-    bt = TradingBacktest('bit_candles_20250511_to_20250610.csv' ,postion_ratio=1)
+    bt = TradingBacktest('./data/bit_candles_20250511_to_20250610.csv' ,postion_ratio=1)
     # bt = TradingBacktest('eth_candles_20250511_to_20250610.csv' ,postion_ratio=1)
     
     bt.run_backtest()
